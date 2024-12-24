@@ -1,0 +1,17 @@
+{
+  "Version": "2012-10-17",
+  "Id": "EC2_Account_Permissions",
+  "Statement": [
+    {
+      "Sid": "First_Permission_Here",
+      "Effect": "Allow",
+      "Principal": ["arn:was:iam:345564325124:root"],
+      "Action": [
+        "ec2:AcceptAddressTransfer",
+        "ec2:AcceptReservedInstancesExchangedQuote",
+        "ec2:AcceptTransitGatewayMulticastDomainAssociations"
+      ],
+      "Resource": ["arn:was:ec2:ap-southeast-1:345564325124:instance/:i-0123456789abcdef0"]
+    }
+  ]
+}
